@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="HKU CDS Shanghai Semester 1 2026/27 - Key dates, course overview, enrolment, activities, and pre-departure checklist for Year 2 BEng students.">
+<link rel="icon" href="https://github.com/user-attachments/assets/d4379fea-38b3-4839-a9a6-46a24f5b1638" type="image/png">
+<link rel="dns-prefetch" href="//github.com">
+<title>Shanghai Semester - HKU CDS</title>
+<style>
+/* ========== Reset & Base ========== */
+*, *::before, *::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+-webkit-text-size-adjust: 100%;
+}
+body {
+background-color: #fcfdfe;
+color: #333;
+line-height: 1.6;
+font-family: 'Helvetica Neue', Arial, sans-serif;
+-webkit-font-smoothing: antialiased;
+}
+
+/* ========== Scroll Animations ========== */
+.fade-in-up {
+opacity: 0;
+transform: translateY(30px);
+transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-up.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* ========== 1. Navbar ========== */
+.navbar {
+background-color: #051464;
+padding: 8px 0;
+position: sticky;
+top: 0;
+z-index: 1000;
+width: 100%;
+}
+.nav-container {
+width: 100%;
+max-width: 100%;
+padding: 0 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+min-height: 65px;
+gap: 30px;
+}
+.navbar .logo-container {
+display: flex;
+align-items: center;
+flex-shrink: 0;
+}
+.nav-right {
+display: flex;
+align-items: center;
+gap: 24px;
+margin-left: auto;
+}
+.navbar .nav-logo {
+height: 55px;
+width: auto;
+object-fit: contain;
+display: block;
+}
+.nav-links {
+display: flex;
+align-items: center;
+gap: 24px;
+}
+.nav-links a {
+color: rgba(255,255,255,0.8);
+text-decoration: none;
+font-size: 13px;
+font-weight: 500;
+transition: color 0.2s;
+white-space: nowrap;
+}
+.nav-links a:hover {
+color: #ffffff;
+}
+.nav-links a.active-link {
+color: #ffffff;
+font-weight: 600;
+}
+.navbar .back-home {
+color: #ffffff;
+border: 1.5px solid rgba(255, 255, 255, 0.8);
+text-decoration: none;
+font-size: 14px;
+font-weight: 600;
+transition: all 0.3s ease;
+padding: 8px 18px;
+border-radius: 6px;
+white-space: nowrap;
+flex-shrink: 0;
+}
+.navbar .back-home:hover {
+background-color: #ffffff;
+color: #051464;
+border-color: #ffffff;
+}
+
+/* ========== Hero Banner ========== */
+.hero {
+background-color: #051464;
+background-image:
+linear-gradient(rgba(5, 20, 100, 0.45), rgba(5, 20, 100, 0.15)),
+url('https://github.com/user-attachments/assets/155f807e-5f60-4e31-a901-1a9aea0b4699');
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+color: white;
+text-align: center;
+padding: 120px 20px;
+}
+.hero h1 {
+font-size: 46px;
+margin-bottom: 20px;
+letter-spacing: 1px;
+font-weight: 700;
+}
+.hero .slogan {
+font-size: 18px;
+max-width: 900px;
+margin: 0 auto;
+line-height: 1.8;
+font-weight: 300;
+opacity: 0.95;
+border-top: 1px solid rgba(255,255,255,0.3);
+padding-top: 20px;
+}
+
+/* ========== Hero CTA Banner ========== */
+.hero-cta {
+margin-top: 40px;
+padding-top: 30px;
+border-top: 1px solid rgba(255,255,255,0.2);
+}
+.hero-cta-title {
+font-size: 15px;
+font-weight: 600;
+margin-bottom: 12px;
+opacity: 0.9;
+letter-spacing: 0.3px;
+}
+.hero-cta-title span {
+color: #ff9800;
+font-weight: 700;
+text-decoration: underline;
+}
+.hero-cta-btn {
+display: inline-block;
+background-color: #ff9800;
+color: white;
+text-decoration: none;
+padding: 14px 44px;
+font-weight: 700;
+font-size: 16px;
+border-radius: 30px;
+transition: background 0.3s, transform 0.2s;
+box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+margin-bottom: 20px;
+}
+.hero-cta-btn:hover {
+background-color: #e68a00;
+transform: translateY(-2px);
+}
+.hero-form-prep {
+background: rgba(255,255,255,0.1);
+border: 1px solid rgba(255,255,255,0.2);
+border-radius: 8px;
+padding: 16px 24px;
+max-width: 700px;
+margin: 0 auto;
+text-align: left;
+}
+.hero-form-prep-title {
+font-size: 13px;
+font-weight: 600;
+margin-bottom: 10px;
+opacity: 0.9;
+}
+.hero-form-prep ul {
+list-style: none;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 6px 20px;
+}
+.hero-form-prep li {
+font-size: 13px;
+opacity: 0.85;
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.hero-form-prep li::before {
+content: "☐";
+font-size: 12px;
+opacity: 0.7;
+}
+
+/* ========== Common Layout ========== */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 70px 20px;
+}
+.section-bg {
+background-color: #f7f9fc;
+}
+.section-title {
+color: #051464;
+font-size: 28px;
+margin-bottom: 40px;
+font-weight: 700;
+letter-spacing: -0.5px;
+}
+
+/* ========== Section Wave Transitions ========== */
+.section-wave {
+display: block;
+width: 100%;
+height: auto;
+line-height: 0;
+margin-bottom: -1px;
+}
+.section-wave svg {
+display: block;
+width: 100%;
+height: 40px;
+}
+.wave-top {
+transform: scaleY(-1);
+}
+
+/* ========== Key Dates Timeline ========== */
+.timeline-container {
+position: relative;
+margin: 50px 0;
+}
+.timeline-line {
+position: absolute;
+top: 56px;
+left: 0;
+width: 100%;
+height: 4px;
+background-color: #e2e8f0;
+z-index: 1;
+border-radius: 2px;
+}
+.timeline-grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+position: relative;
+z-index: 2;
+gap: 15px;
+}
+.timeline-node {
+text-align: center;
+}
+.timeline-date {
+height: 48px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-bottom: 10px;
+}
+.timeline-date .date-main {
+font-size: 15px;
+font-weight: 700;
+color: #051464;
+display: block;
+line-height: 1.3;
+}
+.timeline-date .date-sub {
+font-size: 12px;
+font-weight: 400;
+color: #718096;
+display: block;
+margin-top: 3px;
+line-height: 1.2;
+}
+.timeline-dot {
+width: 20px;
+height: 20px;
+background-color: #051464;
+border: 4px solid #fff;
+border-radius: 50%;
+margin: 0 auto 15px;
+box-shadow: 0 0 0 3px rgba(5, 20, 100, 0.2);
+transition: all 0.3s ease;
+}
+.timeline-node:hover .timeline-dot {
+transform: scale(1.3);
+background-color: #ff9800;
+}
+.timeline-desc {
+font-size: 14px;
+color: #4a5568;
+padding: 0 5px;
+font-weight: 500;
+line-height: 1.4;
+}
+.footnote {
+font-size: 13px;
+color: #718096;
+margin-top: 30px;
+font-style: italic;
+}
+
+/* ========== Course Overview ========== */
+.academic-link-card {
+background-color: #fff;
+padding: 20px;
+border-left: 4px solid #051464;
+margin-bottom: 35px;
+border-radius: 0 8px 8px 0;
+box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+font-size: 15px;
+}
+.academic-link-card a {
+color: #051464;
+font-weight: 600;
+text-decoration: underline;
+}
+.block-title {
+font-size: 20px;
+color: #051464;
+margin: 30px 0 15px 0;
+font-weight: 700;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.table-responsive {
+width: 100%;
+overflow-x: auto;
+margin-bottom: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+-webkit-overflow-scrolling: touch;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+background-color: #fff;
+min-width: 800px;
+text-align: left;
+table-layout: fixed;
+}
+th {
+background-color: #051464;
+color: white;
+padding: 14px;
+font-size: 15px;
+font-weight: 600;
+letter-spacing: 0.5px;
+text-align: center;
+}
+td {
+padding: 15px;
+border: 1px solid #e2e8f0;
+vertical-align: top;
+font-size: 14px;
+width: 18%;
+}
+td:first-child, th:first-child {
+font-weight: bold;
+color: #051464;
+background-color: #f7f9fc;
+width: 10%;
+text-align: center;
+vertical-align: middle;
+}
+.course-box {
+background-color: #f0f4f8;
+padding: 12px;
+border-radius: 6px;
+border-left: 3px solid #051464;
+margin-bottom: 5px;
+}
+.course-box:last-child {
+margin-bottom: 0;
+}
+.course-title {
+font-weight: 700;
+color: #051464;
+margin-bottom: 4px;
+}
+.course-or {
+text-align: center;
+font-weight: bold;
+color: #ff9800;
+margin: 5px 0;
+font-size: 12px;
+}
+.no-class {
+color: #a0aec0;
+font-style: italic;
+font-size: 13px;
+text-align: center;
+padding-top: 15px;
+}
+.reading-week-banner {
+background: linear-gradient(90deg, #e6ecf8, #f0f4f8);
+border: 2px dashed #051464;
+padding: 20px;
+text-align: center;
+border-radius: 8px;
+margin: 40px 0;
+}
+.reading-week-banner h3 {
+color: #051464;
+font-size: 18px;
+font-weight: 700;
+margin-bottom: 5px;
+}
+
+/* ========== Course Enrolment ========== */
+.enrolment-card {
+background-color: #fff;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+border-top: 4px solid #051464;
+}
+.enrolment-card p {
+margin-bottom: 20px;
+font-size: 15px;
+}
+.enrolment-card p:last-of-type {
+margin-bottom: 0;
+}
+.example-box {
+background-color: #f7f9fc;
+padding: 20px;
+border-radius: 6px;
+border: 1px dashed #cbd5e0;
+display: flex;
+flex-wrap: wrap;
+gap: 8px 16px;
+width: 100%;
+}
+.example-item {
+display: flex;
+align-items: baseline;
+gap: 6px;
+}
+.example-sep {
+color: #cbd5e0;
+font-weight: bold;
+display: none;
+}
+.example-box strong {
+color: #051464;
+font-family: monospace;
+font-size: 14px;
+background: #e2e8f0;
+padding: 2px 6px;
+border-radius: 4px;
+white-space: nowrap;
+}
+.example-box .example-value {
+font-family: monospace;
+font-size: 14px;
+font-weight: 600;
+color: #333;
+}
+@media (min-width: 640px) {
+.example-sep { display: inline; }
+}
+
+/* ========== Activities ========== */
+.activities-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+}
+.activity-card {
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+transition: transform 0.3s ease;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+.activity-card:hover {
+transform: translateY(-5px);
+}
+.activity-img {
+width: 100%;
+aspect-ratio: 16 / 10;
+object-fit: cover;
+display: block;
+}
+.activity-content {
+padding: 25px 30px 30px;
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+}
+.activity-card h3 {
+color: #051464;
+font-size: 20px;
+margin-bottom: 15px;
+border-bottom: 2px solid #f0f4f8;
+padding-bottom: 10px;
+}
+.activity-card p {
+font-size: 15px;
+color: #4a5568;
+line-height: 1.6;
+}
+
+/* ========== Pre-departure Checklist (Restructured) ========== */
+.checklist-steps-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+margin-bottom: 30px;
+align-items: stretch;
+}
+.step-card {
+background: #fff;
+padding: 30px 25px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+border-top: 4px solid #cbd5e0;
+position: relative;
+transition: all 0.3s ease;
+display: flex;
+flex-direction: column;
+}
+.step-card:hover {
+border-top-color: #051464;
+box-shadow: 0 8px 25px rgba(5, 20, 100, 0.08);
+transform: translateY(-2px);
+}
+.step-badge {
+position: absolute;
+top: -14px;
+left: 25px;
+background: #e2e8f0;
+color: #4a5568;
+padding: 2px 10px;
+font-size: 11px;
+font-weight: 700;
+text-transform: uppercase;
+border-radius: 20px;
+letter-spacing: 0.5px;
+}
+.step-card h3 {
+font-size: 19px;
+color: #051464;
+margin: 5px 0 15px 0;
+font-weight: 700;
+}
+.step-content {
+flex-grow: 1;
+}
+
+/* Action vs FYI labels */
+.action-group, .fyi-group {
+margin-bottom: 16px;
+}
+.action-group:last-child, .fyi-group:last-child {
+margin-bottom: 0;
+}
+.group-label {
+display: inline-flex;
+align-items: center;
+gap: 5px;
+font-size: 11px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+padding: 3px 10px;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+.group-label.action {
+background: #fff3e0;
+color: #e65100;
+border: 1px solid #ffcc80;
+}
+.group-label.fyi {
+background: #e8eaf6;
+color: #283593;
+border: 1px solid #c5cae9;
+}
+.group-label .label-icon {
+font-size: 12px;
+}
+
+.action-group ul, .fyi-group ul {
+list-style: none;
+padding-left: 0;
+}
+.action-group li, .fyi-group li {
+position: relative;
+padding-left: 20px;
+margin-bottom: 12px;
+font-size: 14px;
+color: #333;
+line-height: 1.5;
+}
+.action-group li::before {
+content: "☑";
+color: #e65100;
+font-size: 13px;
+position: absolute;
+left: 0;
+top: 0;
+}
+.fyi-group li::before {
+content: "ℹ";
+color: #283593;
+font-size: 13px;
+position: absolute;
+left: 0;
+top: 0;
+}
+.action-group ul ul, .fyi-group ul ul {
+margin-top: 8px;
+margin-left: 15px;
+}
+.action-group ul ul li, .fyi-group ul ul li {
+margin-bottom: 8px;
+padding-left: 0;
+}
+.action-group ul ul li::before, .fyi-group ul ul li::before {
+content: none;
+}
+
+/* ========== Bank Information Card ========== */
+.bank-card {
+background: #fff;
+padding: 30px 25px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+border-top: 4px solid #ff9800;
+position: relative;
+margin-bottom: 30px;
+}
+.bank-card h3 {
+font-size: 19px;
+color: #051464;
+margin-bottom: 15px;
+font-weight: 700;
+}
+.bank-card .step-intro {
+font-size: 14px;
+color: #718096;
+margin-bottom: 18px;
+line-height: 1.4;
+}
+.bank-options {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+margin-top: 15px;
+}
+.bank-option {
+background: #f7f9fc;
+padding: 20px;
+border-radius: 8px;
+border: 1px solid #e2e8f0;
+position: relative;
+}
+.bank-option h4 {
+font-size: 15px;
+color: #051464;
+margin-bottom: 8px;
+font-weight: 700;
+}
+.bank-option p {
+font-size: 13px;
+color: #4a5568;
+line-height: 1.5;
+}
+.bank-option .option-tag {
+display: inline-block;
+background: #ff9800;
+color: white;
+font-size: 10px;
+font-weight: 700;
+padding: 2px 8px;
+border-radius: 10px;
+text-transform: uppercase;
+letter-spacing: 0.3px;
+margin-bottom: 8px;
+}
+.bank-type-note {
+background: #fff8e1;
+border: 1px solid #ffe082;
+border-radius: 6px;
+padding: 14px 18px;
+margin-top: 15px;
+font-size: 13px;
+color: #5d4037;
+line-height: 1.5;
+}
+.bank-type-note strong {
+color: #e65100;
+}
+
+/* ========== On-Campus Info Card ========== */
+.oncampus-card {
+background: #fff;
+padding: 30px 25px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+border-top: 4px solid #2e7d32;
+margin-bottom: 30px;
+}
+.oncampus-card h3 {
+font-size: 19px;
+color: #051464;
+margin-bottom: 15px;
+font-weight: 700;
+}
+.oncampus-card .step-intro {
+font-size: 14px;
+color: #718096;
+margin-bottom: 18px;
+line-height: 1.4;
+}
+.oncampus-info-grid {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 15px;
+}
+.oncampus-info-item {
+background: #f1f8e9;
+padding: 18px;
+border-radius: 6px;
+border-left: 3px solid #2e7d32;
+}
+.oncampus-info-item h4 {
+font-size: 14px;
+color: #2e7d32;
+margin-bottom: 6px;
+font-weight: 700;
+}
+.oncampus-info-item p {
+font-size: 13px;
+color: #4a5568;
+line-height: 1.4;
+}
+
+/* ========== Form Prep Checklist ========== */
+.form-prep-box {
+background: linear-gradient(135deg, #051464, #0b2296);
+color: white;
+padding: 35px;
+border-radius: 8px;
+box-shadow: 0 6px 20px rgba(5, 20, 100, 0.15);
+margin-top: 20px;
+}
+.form-prep-box h3 {
+font-size: 22px;
+margin-bottom: 10px;
+color: #ff9800;
+letter-spacing: 0.5px;
+}
+.form-prep-box .form-subtitle {
+font-size: 14px;
+opacity: 0.85;
+margin-bottom: 20px;
+line-height: 1.5;
+}
+.form-prep-box .form-subtitle span {
+color: #ff9800;
+font-weight: 600;
+text-decoration: underline;
+}
+.form-prep-checklist {
+list-style: none;
+padding: 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px 30px;
+margin-bottom: 25px;
+}
+.form-prep-checklist li {
+font-size: 14px;
+opacity: 0.9;
+display: flex;
+align-items: flex-start;
+gap: 8px;
+line-height: 1.5;
+}
+.form-prep-checklist li::before {
+content: "☐";
+font-size: 14px;
+flex-shrink: 0;
+margin-top: 1px;
+}
+.form-prep-note {
+font-size: 12px;
+opacity: 0.7;
+margin-top: 5px;
+}
+.form-prep-btn {
+display: inline-block;
+background-color: #ff9800;
+color: white;
+text-decoration: none;
+padding: 12px 40px;
+font-weight: 700;
+border-radius: 25px;
+transition: background 0.3s, transform 0.2s;
+box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.form-prep-btn:hover {
+background-color: #e68a00;
+transform: translateY(-2px);
+}
+
+/* ========== Campus Facilities Sliders ========== */
+.campus-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+margin-top: 20px;
+}
+.campus-card {
+background-color: #ffffff;
+border-radius: 10px;
+overflow: hidden;
+border: 1px solid #e2e8f0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+display: flex;
+flex-direction: column;
+}
+.campus-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(5, 20, 100, 0.08);
+}
+.campus-slider-container {
+position: relative;
+width: 100%;
+aspect-ratio: 16 / 10;
+overflow: hidden;
+background-color: #edf2f7;
+}
+.campus-slider-wrapper {
+display: flex;
+width: 100%;
+height: 100%;
+transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.campus-slider-wrapper img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+flex-shrink: 0;
+}
+.campus-arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(255, 255, 255, 0.8);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border: none;
+width: 36px;
+height: 36px;
+border-radius: 50%;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #051464;
+font-size: 13px;
+font-weight: bold;
+opacity: 0;
+transition: all 0.2s ease;
+z-index: 5;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.campus-slider-container:hover .campus-arrow {
+opacity: 1;
+}
+.campus-arrow:hover {
+background: #051464;
+color: #ffffff;
+}
+.campus-arrow.prev-arrow { left: 12px; }
+.campus-arrow.next-arrow { right: 12px; }
+.campus-slider-dots {
+position: absolute;
+bottom: 12px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+gap: 6px;
+z-index: 5;
+}
+.campus-slider-dot {
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.4);
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.campus-slider-dot.active {
+background: #ffffff;
+width: 15px;
+border-radius: 3px;
+}
+.campus-card-content {
+padding: 22px 25px 25px;
+flex-grow: 1;
+}
+.campus-card-content h3 {
+color: #051464;
+font-size: 19px;
+font-weight: 700;
+margin-bottom: 8px;
+}
+.campus-card-content p {
+font-size: 14px;
+color: #4a5568;
+line-height: 1.5;
+}
+
+/* ========== FAQ Category Tabs ========== */
+.faq-tabs {
+display: flex;
+gap: 8px;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.faq-tab {
+padding: 8px 18px;
+font-size: 13px;
+font-weight: 600;
+border: 1.5px solid #e2e8f0;
+background: #fff;
+color: #4a5568;
+border-radius: 20px;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+.faq-tab:hover {
+border-color: #051464;
+color: #051464;
+}
+.faq-tab.active {
+background-color: #051464;
+color: #fff;
+border-color: #051464;
+}
+
+/* ========== FAQ Accordion ========== */
+.qa-container {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+.qa-item {
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+border: 1px solid #e2e8f0;
+overflow: hidden;
+transition: all 0.3s ease;
+}
+.qa-item.hidden-by-filter {
+display: none;
+}
+.qa-question {
+font-size: 16px;
+font-weight: 700;
+color: #051464;
+padding: 20px 25px;
+margin-bottom: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+background-color: #fff;
+transition: background-color 0.2s;
+user-select: none;
+}
+.qa-question:hover {
+background-color: #f7f9fc;
+}
+.qa-question .q-text {
+display: flex;
+gap: 8px;
+align-items: flex-start;
+}
+.qa-question::after {
+content: "\276F";
+font-size: 12px;
+color: #718096;
+transition: transform 0.3s ease;
+margin-left: 15px;
+flex-shrink: 0;
+}
+.qa-item.active .qa-question::after {
+transform: rotate(90deg);
+}
+.qa-answer {
+font-size: 14px;
+color: #4a5568;
+line-height: 1.6;
+padding: 0 25px 20px 25px;
+display: none;
+border-top: 1px solid #f0f4f8;
+padding-top: 15px;
+}
+.qa-item.active .qa-answer {
+display: block;
+background-color: #fcfdfe;
+}
+
+/* ========== Contact Us ========== */
+.inquiry-card {
+background-color: #fff;
+padding: 35px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+border-left: 4px solid #051464;
+}
+.inquiry-card > p {
+font-size: 15px;
+color: #4a5568;
+margin-bottom: 25px;
+line-height: 1.6;
+}
+.inquiry-details {
+background-color: #f7f9fc;
+padding: 25px;
+border-radius: 6px;
+border: 1px solid #e2e8f0;
+}
+.inquiry-details ul {
+list-style: none;
+padding-left: 0;
+}
+.inquiry-details li {
+font-size: 14px;
+color: #333;
+margin-bottom: 16px;
+display: flex;
+align-items: flex-start;
+gap: 10px;
+line-height: 1.5;
+}
+.inquiry-details li:last-child {
+margin-bottom: 0;
+}
+.inquiry-details strong {
+color: #051464;
+min-width: 150px;
+display: inline-block;
+}
+.inquiry-details .info-content {
+flex-grow: 1;
+color: #4a5568;
+}
+.inquiry-details a {
+color: #051464;
+font-weight: 600;
+text-decoration: underline;
+transition: color 0.2s;
+}
+.inquiry-details a:hover {
+color: #ff9800;
+}
+.inquiry-details code {
+font-family: monospace;
+background: #e2e8f0;
+padding: 3px 8px;
+border-radius: 4px;
+font-size: 13px;
+color: #051464;
+font-weight: bold;
+}
+
+/* ========== Back to Top Button ========== */
+.back-to-top {
+position: fixed;
+bottom: 30px;
+right: 30px;
+z-index: 900;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: #051464;
+color: #fff;
+border: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+visibility: hidden;
+transform: translateY(10px);
+transition: all 0.3s ease;
+box-shadow: 0 4px 12px rgba(5, 20, 100, 0.25);
+}
+.back-to-top.visible {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+.back-to-top:hover {
+background-color: #ff9800;
+transform: translateY(-2px);
+}
+.back-to-top svg {
+width: 20px;
+height: 20px;
+fill: currentColor;
+}
+
+/* ========== Footer ========== */
+footer {
+background-color: #030d42;
+color: rgba(255,255,255,0.5);
+text-align: center;
+padding: 40px 20px 25px;
+font-size: 13px;
+}
+
+/* ====================================================================
+Responsive Breakpoints
+==================================================================== */
+
+/* Tablet & below (<=960px) */
+@media (max-width: 960px) {
+.nav-container {
+padding: 0 20px;
+}
+.hero { padding: 60px 15px; }
+.hero h1 { font-size: 28px; line-height: 1.3; }
+.hero .slogan { font-size: 14px; padding-top: 15px; }
+.hero-cta { margin-top: 30px; padding-top: 20px; }
+.hero-cta-title { font-size: 14px; }
+.hero-cta-btn { padding: 12px 32px; font-size: 15px; }
+.hero-form-prep { padding: 12px 16px; }
+.hero-form-prep ul { gap: 4px 16px; }
+
+.container { padding: 40px 15px; }
+.section-title { font-size: 22px; margin-bottom: 25px; }
+
+.table-responsive::after {
+content: "\2194 Scroll horizontally to view full schedule";
+display: block;
+text-align: center;
+font-size: 12px;
+color: #ff9800;
+margin-top: 10px;
+font-weight: 500;
+}
+
+.timeline-grid {
+grid-template-columns: 1fr;
+gap: 0;
+padding-left: 20px;
+}
+.timeline-line {
+display: none;
+}
+.timeline-node {
+text-align: left;
+display: flex;
+align-items: flex-start;
+gap: 20px;
+position: relative;
+padding-bottom: 30px;
+}
+.timeline-node:last-child {
+padding-bottom: 0;
+}
+.timeline-date {
+min-width: 120px;
+text-align: left;
+flex-shrink: 0;
+}
+.timeline-dot {
+margin: 4px 0 0 0;
+flex-shrink: 0;
+position: relative;
+z-index: 1;
+}
+.timeline-desc {
+flex-grow: 1;
+}
+
+.activities-grid { grid-template-columns: 1fr; }
+.checklist-steps-grid { grid-template-columns: 1fr; gap: 35px; }
+.step-card { padding: 25px 20px; }
+.bank-options { grid-template-columns: 1fr; }
+.oncampus-info-grid { grid-template-columns: 1fr; }
+.form-prep-checklist { grid-template-columns: 1fr; }
+.campus-grid { grid-template-columns: 1fr; gap: 20px; }
+
+.campus-arrow { opacity: 1; }
+
+.inquiry-details li { flex-direction: column; gap: 4px; }
+.inquiry-details strong { min-width: auto; }
+
+.nav-links { display: none; }
+}
+
+/* Phone (<=480px) */
+@media (max-width: 480px) {
+.nav-container {
+padding: 0 12px;
+gap: 8px;
+min-height: 55px;
+}
+.navbar .nav-logo {
+height: 38px;
+}
+.navbar .back-home {
+font-size: 11px;
+padding: 5px 10px;
+border-width: 1px;
+}
+.hero { padding: 40px 12px; }
+.hero h1 { font-size: 22px; }
+.hero .slogan { font-size: 13px; }
+.hero-cta-btn { padding: 10px 24px; font-size: 14px; }
+.container { padding: 30px 12px; }
+.section-title { font-size: 20px; margin-bottom: 20px; }
+.form-prep-box { padding: 25px 15px; }
+.form-prep-box h3 { font-size: 18px; }
+.form-prep-btn { padding: 10px 28px; font-size: 14px; }
+.enrolment-card { padding: 20px 15px; }
+.inquiry-card { padding: 20px 15px; }
+.qa-question { padding: 16px 18px; font-size: 15px; }
+.qa-answer { padding: 0 18px 18px; padding-top: 12px; }
+.faq-tabs { gap: 6px; }
+.faq-tab { padding: 6px 14px; font-size: 12px; }
+.back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+<div class="logo-container">
+<img src="https://github.com/user-attachments/assets/d4379fea-38b3-4839-a9a6-46a24f5b1638" alt="HKU CDS Logo" class="nav-logo">
+</div>
+<div class="nav-right">
+<div class="nav-links">
+<a href="#key-dates">Key Dates</a>
+<a href="#courses">Courses</a>
+<a href="#enrolment">Enrolment</a>
+<a href="#activities">Activities</a>
+<a href="#checklist">Checklist</a>
+<a href="#facilities">Facilities</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</div>
+<a href="#" class="back-home">Back to Home Page</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<h1>Semester 1, 2026/27</h1>
+<p class="slogan">BEng(CompSc) | BEng(AI&amp;DataSc) Year 2 courses offered in Shanghai</p>
+<div class="hero-cta">
+<p class="hero-cta-title">Complete the <span>2026-2027 Shanghai Semester - Student Information Collection</span> form by <strong>30 June 2026 (Tuesday)</strong></p>
+<a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=TrX5QnckukG_CXoNKoP_CVkSEHTvGWNArsMeE0ULIP5UNVU4OUFQWUFZVUlSWFVDNDdHWjVKNklRVy4u&route=shorturl" target="_blank" class="hero-cta-btn">Complete Online Form</a>
+<div class="hero-form-prep">
+<p class="hero-form-prep-title">Before you fill in the form, make sure you have:</p>
+<ul>
+<li>Mainland mobile number</li>
+<li>Bank account details (or plan to open on Orientation Day)</li>
+<li>Recent photograph (for campus access)</li>
+<li>Personal and emergency contact information</li>
+</ul>
+</div>
+</div>
+</header>
+
+<main>
+<!-- ====== Key Dates ====== -->
+<section class="container fade-in-up" id="key-dates">
+<h2 class="section-title">Key Dates</h2>
+<div class="timeline-container">
+<div class="timeline-line"></div>
+<div class="timeline-grid">
+<div class="timeline-node">
+<div class="timeline-date">
+<span class="date-main">30 June</span>
+<span class="date-sub">Tuesday</span>
+</div>
+<div class="timeline-dot"></div>
+<div class="timeline-desc">Deadline to Submit Information Form</div>
+</div>
+<div class="timeline-node">
+<div class="timeline-date">
+<span class="date-main">4 - 10 August</span>
+<span class="date-sub">&nbsp;</span>
+</div>
+<div class="timeline-dot"></div>
+<div class="timeline-desc">Course Enrolment Period</div>
+</div>
+<div class="timeline-node">
+<div class="timeline-date">
+<span class="date-main">29 August</span>
+<span class="date-sub">Saturday</span>
+</div>
+<div class="timeline-dot"></div>
+<div class="timeline-desc">Check-in Day</div>
+</div>
+<div class="timeline-node">
+<div class="timeline-date">
+<span class="date-main">31 August</span>
+<span class="date-sub">Monday</span>
+</div>
+<div class="timeline-dot"></div>
+<div class="timeline-desc">Orientation Day</div>
+</div>
+<div class="timeline-node">
+<div class="timeline-date">
+<span class="date-main">1 September</span>
+<span class="date-sub">Tuesday</span>
+</div>
+<div class="timeline-dot"></div>
+<div class="timeline-desc">Semester Commencement</div>
+</div>
+</div>
+</div>
+<p class="footnote">* Public holidays will align with HKSAR arrangements.</p>
+</section>
+
+<!-- Wave transition -->
+<div class="section-wave wave-top">
+<svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,0 L0,25 Q300,45 600,25 Q900,5 1200,25 L1200,0 Z" fill="#f7f9fc"/>
+</svg>
+</div>
+
+<!-- ====== Course Overview ====== -->
+<section class="section-bg" id="courses">
+<div class="container fade-in-up">
+<h2 class="section-title">Course Overview</h2>
+<div class="academic-link-card">
+The academic calendar for the Shanghai Semester will follow that of HKU (see&nbsp;<a href="https://aas.hku.hk/important-academic-dates/" target="_blank">Important Academic Dates - Academic Advising and Scholarships Office</a>).
+</div>
+
+<div class="block-title">Block A <span>(1 September - 11 October)</span></div>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AM (9am - 12noon)</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP2119</div>
+<div>Introduction to Data Structures and Algorithms</div>
+</div>
+</td>
+<td>
+<div class="course-box">
+<div class="course-title">SDST2601</div>
+<div>Probability and Statistics I</div>
+</div>
+</td>
+<td class="no-class">No classes scheduled</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP2119</div>
+<div>Introduction to Data Structures and Algorithms</div>
+</div>
+</td>
+<td>
+<div class="course-box">
+<div class="course-title">SDST2601</div>
+<div>Probability and Statistics I</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>PM (2pm - 5pm)</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP2120</div>
+<div>Computer Organization</div>
+</div>
+<div class="course-or">OR</div>
+<div class="course-box">
+<div class="course-title">COMP2501</div>
+<div>Introduction to Data Science</div>
+</div>
+</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP2121</div>
+<div>Discrete Mathematics</div>
+</div>
+</td>
+<td class="no-class">No classes scheduled</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP2120</div>
+<div>Computer Organization</div>
+</div>
+<div class="course-or">OR</div>
+<div class="course-box">
+<div class="course-title">COMP2501</div>
+<div>Introduction to Data Science</div>
+</div>
+</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP2121</div>
+<div>Discrete Mathematics</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="reading-week-banner">
+<h3>Reading Week</h3>
+<p>(12 - 17 October)</p>
+</div>
+
+<div class="block-title">Block B <span>(18 October - 30 November)</span></div>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AM (9am - 12noon)</td>
+<td class="no-class">No classes scheduled</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP3278</div>
+<div>Introduction to Database Management Systems</div>
+</div>
+</td>
+<td class="no-class">No classes scheduled</td>
+<td class="no-class">No classes scheduled</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP3278</div>
+<div>Introduction to Database Management Systems</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>PM (2pm - 5pm)</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP3314</div>
+<div>Introduction to Machine Learning</div>
+</div>
+</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP3270</div>
+<div>Introduction to Artificial Intelligence</div>
+</div>
+</td>
+<td class="no-class">No classes scheduled</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP3314</div>
+<div>Introduction to Machine Learning</div>
+</div>
+</td>
+<td>
+<div class="course-box">
+<div class="course-title">COMP3270</div>
+<div>Introduction to Artificial Intelligence</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="footnote">
+<div>* In general, no classes are scheduled on Wednesdays, allowing you to attend online Common Core Courses or arrange personal activities.</div>
+<div style="margin-top: 6px;">* Examinations will be held at the end of the semester in Shanghai, concurrently with the Hong Kong assessment period (7 - 23 December, 2026).</div>
+</div>
+</div>
+</section>
+
+<!-- Wave transition -->
+<div class="section-wave">
+<svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,0 L0,25 Q300,45 600,25 Q900,5 1200,25 L1200,0 Z" fill="#fcfdfe"/>
+</svg>
+</div>
+
+<!-- ====== Course Enrolment ====== -->
+<section class="container fade-in-up" id="enrolment">
+<h2 class="section-title">Course Enrolment</h2>
+<div class="enrolment-card">
+<p>
+You will enrol via the Student Information System (SIS).<br>
+<strong>Course enrolment period:</strong> 4 August 2026 (Tuesday) - 10 August 2026 (Monday).
+</p>
+<p>When enroling, look for the <strong>Subclass</strong> that indicates courses for the Shanghai Semester Programme. For example:</p>
+<div class="example-box">
+<div class="example-item">
+<strong>Course Code:</strong>
+<span class="example-value">COMP2120</span>
+</div>
+<span class="example-sep">|</span>
+<div class="example-item">
+<strong>Course Name:</strong>
+<span class="example-value">Computer Organization</span>
+</div>
+<span class="example-sep">|</span>
+<div class="example-item">
+<strong>Subclass:</strong>
+<span class="example-value">SH</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Wave transition -->
+<div class="section-wave wave-top">
+<svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,0 L0,25 Q300,45 600,25 Q900,5 1200,25 L1200,0 Z" fill="#f7f9fc"/>
+</svg>
+</div>
+
+<!-- ====== Activities ====== -->
+<section class="section-bg" id="activities">
+<div class="container fade-in-up">
+<h2 class="section-title">Activities</h2>
+<div class="activities-grid">
+<div class="activity-card">
+<img src="https://github.com/user-attachments/assets/3f8c7c7b-ee94-47fb-b7e2-80a875987cf9" alt="Orientation Day" class="activity-img" loading="lazy">
+<div class="activity-content">
+<h3>Orientation Day</h3>
+<p>An Orientation session, including lunch and a campus tour, will be held on <strong>31 August (Monday) 2026</strong>.</p>
+</div>
+</div>
+<div class="activity-card">
+<img src="https://github.com/user-attachments/assets/c9fef2d2-ce95-4ece-8476-15f40bd21b40" alt="Reading Week Activities" class="activity-img" loading="lazy">
+<div class="activity-content">
+<h3>Reading Week Activities</h3>
+<p>Industry-related activities such as company visits to leading technology enterprises and career talks will be organised.<br><br>
+Participation is entirely optional; you may choose to arrange personal activities instead.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Wave transition -->
+<div class="section-wave">
+<svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,0 L0,25 Q300,45 600,25 Q900,5 1200,25 L1200,0 Z" fill="#fcfdfe"/>
+</svg>
+</div>
+
+<!-- ====== Pre-departure Checklist (Restructured) ====== -->
+<section class="container fade-in-up" id="checklist">
+<h2 class="section-title">Pre-departure Checklist</h2>
+<div class="checklist-steps-grid">
+
+<!-- Phase 1: Travel & Support -->
+<div class="step-card">
+<span class="step-badge">Phase 1</span>
+<h3>Travel &amp; Support</h3>
+<div class="step-content">
+<div class="action-group">
+<div class="group-label action"><span class="label-icon">☑</span> Action Required</div>
+<ul>
+<li><strong>Visa Requirement:</strong> If you are an international student, you will need a valid visa to travel to Shanghai. HKU will arrange this centrally — please provide the required documents when requested.</li>
+<li><strong>Flight Booking:</strong> You are responsible for booking your own flight to Shanghai.</li>
+</ul>
+</div>
+<div class="fyi-group">
+<div class="group-label fyi"><span class="label-icon">ℹ</span> For Your Information</div>
+<ul>
+<li><strong>Insurance:</strong> You are covered by school-provided insurance during your stay in Shanghai — no action needed from you.</li>
+<li><strong>Financial Support:</strong> You will receive a travel subsidy of RMB 3,000 and a living allowance of RMB 12,000 <strong>upon successful completion</strong> of the Programme. A Mainland bank account is required to receive these — see <a href="#bank-info" style="color: #e65100; font-weight: 600;">Mainland Bank Information</a> below.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Phase 2: Accounts Setup -->
+<div class="step-card">
+<span class="step-badge">Phase 2</span>
+<h3>Accounts Setup</h3>
+<div class="step-content">
+<div class="action-group">
+<div class="group-label action"><span class="label-icon">☑</span> Action Required</div>
+<ul>
+<li><strong>Mainland Mobile Number:</strong> You need a Mainland mobile number for bank account opening and daily communication. Purchase a SIM card in Hong Kong before departure.</li>
+<li><strong>WeChat Account:</strong> Set up a WeChat account before you arrive. A WeChat group will be created for communication.</li>
+<li><strong>Bank Account:</strong> You need a Mainland bank account for daily expenses and receiving your allowance — see <a href="#bank-info" style="color: #e65100; font-weight: 600;">Mainland Bank Information</a> below.</li>
+<li><strong>Photo for Campus Access:</strong> Submit a photograph in advance to activate secure building access (details will be provided separately).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Mainland Bank Information (Standalone) -->
+<div class="bank-card" id="bank-info">
+<h3>Mainland Bank Information</h3>
+<p class="step-intro">You need a Mainland bank account for daily expenses and to receive your travel subsidy and living allowance. Choose the option that works best for you:</p>
+<div class="bank-options">
+<div class="bank-option">
+<span class="option-tag">Before Departure</span>
+<h4>Option A: Open in Advance</h4>
+<p>Travel to Mainland China and open an account independently <strong>before 30 June</strong>. Any bank is acceptable.</p>
+</div>
+<div class="bank-option">
+<span class="option-tag">On Campus</span>
+<h4>Option B: Open on Orientation Day</h4>
+<p>Open your account on campus during <strong>Orientation Day (31 August)</strong> via ICBC on-site counter services.</p>
+</div>
+</div>
+
+<!-- On-Campus Information (moved from Phase 3) -->
+<div class="oncampus-card">
+<h3>On-Campus Information</h3>
+<p class="step-intro">What to expect when you arrive at the Shanghai campus:</p>
+<div class="oncampus-info-grid">
+<div class="oncampus-info-item">
+<h4>Dormitory Check-in</h4>
+<p>Officially opens on <strong>29 August 2026</strong>. Room allocations are randomised by the Campus Service Office.</p>
+</div>
+<div class="oncampus-info-item">
+<h4>Accommodation</h4>
+<p>2-student shared apartments with <strong>individual private bedrooms</strong>.</p>
+</div>
+<div class="oncampus-info-item">
+<h4>Orientation Day</h4>
+<p>Campus tour and orientation session on <strong>31 August 2026 (Monday)</strong>, including lunch and ICBC bank account opening.</p>
+</div>
+</div>
+</div>
+
+<!-- Checklist for Completing Student Information Form -->
+<div class="form-prep-box">
+<h3>Checklist for Completing the Student Information Form</h3>
+<p class="form-subtitle">Before filling in the <span>2026-2027 Shanghai Semester - Student Information Collection</span> form (deadline: <strong>30 June 2026</strong>), make sure you have the following ready:</p>
+<ul class="form-prep-checklist">
+<li>Mainland mobile number (purchase a SIM card in HK first)</li>
+<li>Mainland bank account details (if opening in advance), or indicate your plan to open on Orientation Day</li>
+<li>A recent photograph for campus access</li>
+<li>Personal information (HKU student ID, passport/ID details)</li>
+<li>Emergency contact information</li>
+<li>Visa-related documents (for international students)</li>
+</ul>
+<p class="form-prep-note">All personal data collected will be used solely for purposes related to insurance, visa, and accommodation.</p>
+<a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=TrX5QnckukG_CXoNKoP_CVkSEHTvGWNArsMeE0ULIP5UNVU4OUFQWUFZVUlSWFVDNDdHWjVKNklRVy4u&route=shorturl" target="_blank" class="form-prep-btn">Complete Online Form</a>
+</div>
+</section>
+
+<!-- Wave transition -->
+<div class="section-wave wave-top">
+<svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,0 L0,25 Q300,45 600,25 Q900,5 1200,25 L1200,0 Z" fill="#f7f9fc"/>
+</svg>
+</div>
+
+<!-- ====== CDS Facilities ====== -->
+<section class="section-bg" id="facilities">
+<div class="container fade-in-up">
+<h2 class="section-title">CDS (Shanghai) Facilities</h2>
+<div class="campus-grid">
+<div class="campus-card">
+<div class="campus-slider-container">
+<div class="campus-slider-wrapper">
+<img src="https://github.com/user-attachments/assets/4b52f188-bb9b-4345-94a3-29d937af86d2" alt="Main Site 1" loading="lazy">
+<img src="https://github.com/user-attachments/assets/14d1363d-baac-4bcf-ae18-12d8df5d5826" alt="Main Site 2" loading="lazy">
+<img src="https://github.com/user-attachments/assets/e07df376-6eba-4187-bcdf-7288a4800707" alt="Main Site 3" loading="lazy">
+<img src="https://github.com/user-attachments/assets/83c72fd9-3c89-45a7-ae4d-b709ad87d22a" alt="Main Site 4" loading="lazy">
+</div>
+<button class="campus-arrow prev-arrow" aria-label="Previous">&#10094;</button>
+<button class="campus-arrow next-arrow" aria-label="Next">&#10095;</button>
+<div class="campus-slider-dots"></div>
+</div>
+<div class="campus-card-content">
+<h3>Main Site</h3>
+<p>Our state-of-the-art teaching site features modern facilities, including cutting-edge lecture halls and classrooms that support premium education.</p>
+</div>
+</div>
+
+<div class="campus-card">
+<div class="campus-slider-container">
+<div class="campus-slider-wrapper">
+<img src="https://github.com/user-attachments/assets/b07a66a5-9fbe-42b7-9ce7-259247acf46a" alt="Study Area 1" loading="lazy">
+<img src="https://github.com/user-attachments/assets/3393b658-5205-43a0-9797-f223cb460b1d" alt="Study Area 2" loading="lazy">
+<img src="https://github.com/user-attachments/assets/513b4f2e-4bf4-442e-969d-c5b9161ac41c" alt="Study Area 3" loading="lazy">
+<img src="https://github.com/user-attachments/assets/19cc01fa-2e90-41b7-9fba-96805dce7b1f" alt="Study Area 4" loading="lazy">
+</div>
+<button class="campus-arrow prev-arrow" aria-label="Previous">&#10094;</button>
+<button class="campus-arrow next-arrow" aria-label="Next">&#10095;</button>
+<div class="campus-slider-dots"></div>
+</div>
+<div class="campus-card-content">
+<h3>Study Area</h3>
+<p>Quiet study lounges and collaborative seminar rooms to empower your research and academic discussion.</p>
+</div>
+</div>
+
+<div class="campus-card">
+<div class="campus-slider-container">
+<div class="campus-slider-wrapper">
+<img src="https://github.com/user-attachments/assets/1de97b17-321b-4431-a7cd-cd081bdab967" alt="Sports 1" loading="lazy">
+<img src="https://github.com/user-attachments/assets/b3832811-4648-4013-94a6-4be3e6534fc6" alt="Sports 2" loading="lazy">
+<img src="https://github.com/user-attachments/assets/f86bb6eb-1875-4c3d-aace-bc1930fcb2f1" alt="Sports 3" loading="lazy">
+<img src="https://github.com/user-attachments/assets/c359086a-7f56-42dd-a63b-1cc8cb015d46" alt="Sports 4" loading="lazy">
+</div>
+<button class="campus-arrow prev-arrow" aria-label="Previous">&#10094;</button>
+<button class="campus-arrow next-arrow" aria-label="Next">&#10095;</button>
+<div class="campus-slider-dots"></div>
+</div>
+<div class="campus-card-content">
+<h3>Sports &amp; Recreation</h3>
+<p>Modern athletic facilities including premium indoor gym spaces, basketball courts, and tennis courts promoting a healthy and balanced student life.</p>
+</div>
+</div>
+
+<div class="campus-card">
+<div class="campus-slider-container">
+<div class="campus-slider-wrapper">
+<img src="https://github.com/user-attachments/assets/1e9fd07c-fab5-411b-a7c1-74faef832866" alt="Dormitory 1" loading="lazy">
+<img src="https://github.com/user-attachments/assets/bde117aa-a30e-4f9f-ba84-b9daf28d9dd9" alt="Dormitory 2" loading="lazy">
+</div>
+<button class="campus-arrow prev-arrow" aria-label="Previous">&#10094;</button>
+<button class="campus-arrow next-arrow" aria-label="Next">&#10095;</button>
+<div class="campus-slider-dots"></div>
+</div>
+<div class="campus-card-content">
+<h3>Student Dormitory</h3>
+<p>Comfortable 2-student shared apartments featuring private individual bedrooms, equipped laundry access, and secure communal living spaces.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Wave transition -->
+<div class="section-wave">
+<svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,0 L0,25 Q300,45 600,25 Q900,5 1200,25 L1200,0 Z" fill="#fcfdfe"/>
+</svg>
+</div>
+
+<!-- ====== FAQ ====== -->
+<section class="container fade-in-up" id="faq">
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<!-- Category Tabs -->
+<div class="faq-tabs">
+<button class="faq-tab active" data-filter="all">All</button>
+<button class="faq-tab" data-filter="fee">Fees &amp; Subsidy</button>
+<button class="faq-tab" data-filter="course">Courses &amp; Exams</button>
+<button class="faq-tab" data-filter="accommodation">Accommodation</button>
+<button class="faq-tab" data-filter="logistics">Logistics &amp; Others</button>
+</div>
+
+<div class="qa-container">
+<div class="qa-item" data-category="fee">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> Do I need to pay the tuition fee for the Semester?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> Your tuition fee for Semester 1 of 2026/27 will remain the same, regardless of whether you study at the HKU campus or at HKU CDS (Shanghai).
+</div>
+</div>
+<div class="qa-item" data-category="fee">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> What is the amount of learning subsidy?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> You will receive a travel subsidy of RMB 3,000 and a living allowance of RMB 12,000 upon successful completion of the semester in Shanghai.
+</div>
+</div>
+<div class="qa-item" data-category="course">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> Will the academic calendar align with Mainland China holidays or Hong Kong's schedule?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> The academic calendar will follow that of HKU and align with HKSAR public holidays.
+</div>
+</div>
+<div class="qa-item" data-category="course">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> Do I still select courses via the portal, or is there a separate place?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> You can enrol in courses via the SIS portal, just like other courses offered in Hong Kong. Look for the "SH" subclass.
+</div>
+</div>
+<div class="qa-item" data-category="course">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> Will the final exam be held at the end of the semester or end of each block, and will the paper be the same as Hong Kong?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> Examinations will be held at the end of the semester, concurrently with the Hong Kong examination period. The School will adopt the same examination procedure for courses offered in both Hong Kong and Shanghai.
+</div>
+</div>
+<div class="qa-item" data-category="accommodation">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> Do I need to pay the dormitory fee?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> No. Free student dormitory (double occupancy in a 2-bedroom apartment) will be provided during your study in Shanghai.
+</div>
+</div>
+<div class="qa-item" data-category="accommodation">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> When can I check in to the student dormitory?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> Dormitory check-in will commence on 29 August 2026.
+</div>
+</div>
+<div class="qa-item" data-category="accommodation">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> How far is the student dormitory from the teaching site, and is there a shuttle bus?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> The student dormitory is approximately a 20-minute walk from the teaching site, and a shuttle bus will be provided.
+</div>
+</div>
+<div class="qa-item" data-category="accommodation">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> Can I choose my roommate?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> Room allocations, including apartment pairings, are managed randomly by the Campus Service Office to foster integration.
+</div>
+</div>
+<div class="qa-item" data-category="logistics">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> What if I can't open a mainland bank account before 30 June?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> Don't worry. If you can't open one in advance, you can use the on-campus ICBC counter services during Orientation Day (31 August).
+</div>
+</div>
+<div class="qa-item" data-category="course">
+<div class="qa-question" role="button" tabindex="0" aria-expanded="false">
+<span class="q-text"><strong>Q:</strong> Is attendance mandatory for the Reading Week activities?</span>
+</div>
+<div class="qa-answer" role="region">
+<strong>A:</strong> No, corporate visits and career development talks during the Reading Week are completely optional. You are free to plan your personal travel or study schedule instead.
+</div>
+</div>
+</div>
+</section>
+
+<!-- Wave transition -->
+<div class="section-wave wave-top">
+<svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,0 L0,25 Q300,45 600,25 Q900,5 1200,25 L1200,0 Z" fill="#f7f9fc"/>
+</svg>
+</div>
+
+<!-- ====== Contact Us ====== -->
+<section class="section-bg" id="contact">
+<div class="container fade-in-up">
+<h2 class="section-title">Contact Us</h2>
+<div class="inquiry-card">
+<p>Have questions about the Shanghai Semester or need to find CDS (Shanghai)? Here are our official addresses and contact channels:</p>
+<div class="inquiry-details">
+<ul>
+<li>
+<strong>&#128205; HKU CDS (Shanghai):</strong>
+<span class="info-content">No. 500 Fangchun Road, Pudong, Shanghai</span>
+</li>
+<li>
+<strong>&#127970; Dormitory:</strong>
+<span class="info-content">Lane 757, Shengxia Road, Pudong, Shanghai</span>
+</li>
+<li>
+<strong>&#9993;&#65039; Email:</strong>
+<span class="info-content"><a href="mailto:enroll.cds.sh@hku.hk">enroll.cds.sh@hku.hk</a></span>
+</li>
+<li>
+<strong>&#128221; Subject Line:</strong>
+<span class="info-content">Please use format: <code>SH Inquiry - [Your Student ID]</code></span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 School of Computing and Data Science, The University of Hong Kong. All rights reserved.</p>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" aria-label="Back to top">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+</button>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+// ====== Scroll Fade-in Animations ======
+var fadeElements = document.querySelectorAll('.fade-in-up');
+if ('IntersectionObserver' in window) {
+var observer = new IntersectionObserver(function(entries) {
+entries.forEach(function(entry) {
+if (entry.isIntersecting) {
+entry.target.classList.add('visible');
+observer.unobserve(entry.target);
+}
+});
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+fadeElements.forEach(function(el) { observer.observe(el); });
+} else {
+fadeElements.forEach(function(el) { el.classList.add('visible'); });
+}
+
+// ====== Active Nav Link Highlight on Scroll ======
+var sections = document.querySelectorAll('section[id]');
+var navLinks = document.querySelectorAll('.nav-links a');
+function updateActiveNav() {
+var scrollPos = window.scrollY + 120;
+sections.forEach(function(section) {
+var top = section.offsetTop;
+var height = section.offsetHeight;
+var id = section.getAttribute('id');
+if (scrollPos >= top && scrollPos < top + height) {
+navLinks.forEach(function(link) {
+link.classList.remove('active-link');
+if (link.getAttribute('href') === '#' + id) {
+link.classList.add('active-link');
+}
+});
+}
+});
+}
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
+
+// ====== FAQ Accordion ======
+var qaQuestions = document.querySelectorAll('.qa-question');
+qaQuestions.forEach(function(question) {
+question.addEventListener('click', function() {
+var item = question.parentElement;
+var isActive = item.classList.contains('active');
+item.classList.toggle('active');
+question.setAttribute('aria-expanded', !isActive);
+});
+question.addEventListener('keydown', function(e) {
+if (e.key === 'Enter' || e.key === ' ') {
+e.preventDefault();
+question.click();
+}
+});
+});
+
+// ====== FAQ Category Tabs ======
+var faqTabs = document.querySelectorAll('.faq-tab');
+var qaItems = document.querySelectorAll('.qa-item');
+faqTabs.forEach(function(tab) {
+tab.addEventListener('click', function() {
+faqTabs.forEach(function(t) { t.classList.remove('active'); });
+tab.classList.add('active');
+var filter = tab.getAttribute('data-filter');
+qaItems.forEach(function(item) {
+if (filter === 'all') {
+item.classList.remove('hidden-by-filter');
+} else {
+if (item.getAttribute('data-category') === filter) {
+item.classList.remove('hidden-by-filter');
+} else {
+item.classList.add('hidden-by-filter');
+}
+}
+});
+});
+});
+
+// ====== Campus Facilities Sliders ======
+var campusCards = document.querySelectorAll('.campus-card');
+campusCards.forEach(function(card) {
+var wrapper = card.querySelector('.campus-slider-wrapper');
+var slides = card.querySelectorAll('.campus-slider-wrapper img');
+var prevBtn = card.querySelector('.prev-arrow');
+var nextBtn = card.querySelector('.next-arrow');
+var dotsContainer = card.querySelector('.campus-slider-dots');
+
+var currentIndex = 0;
+var totalSlides = slides.length;
+
+// Generate dots dynamically
+slides.forEach(function(_, i) {
+var dot = document.createElement('div');
+dot.className = 'campus-slider-dot' + (i === 0 ? ' active' : '');
+dot.addEventListener('click', function() { goToSlide(i); });
+dotsContainer.appendChild(dot);
+});
+
+var dots = dotsContainer.querySelectorAll('.campus-slider-dot');
+
+function updateSliderPosition() {
+wrapper.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+dots.forEach(function(dot, i) {
+dot.classList.toggle('active', i === currentIndex);
+});
+}
+
+function goToSlide(index) {
+currentIndex = index;
+updateSliderPosition();
+}
+
+nextBtn.addEventListener('click', function() {
+currentIndex = (currentIndex + 1) % totalSlides;
+updateSliderPosition();
+});
+
+prevBtn.addEventListener('click', function() {
+currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+updateSliderPosition();
+});
+
+// Swipe support for mobile
+var startX = 0;
+var isDragging = false;
+var sliderContainer = card.querySelector('.campus-slider-container');
+
+sliderContainer.addEventListener('touchstart', function(e) {
+startX = e.touches[0].clientX;
+isDragging = true;
+}, { passive: true });
+
+sliderContainer.addEventListener('touchend', function(e) {
+if (!isDragging) return;
+isDragging = false;
+var endX = e.changedTouches[0].clientX;
+var diff = startX - endX;
+if (Math.abs(diff) > 50) {
+if (diff > 0) {
+currentIndex = (currentIndex + 1) % totalSlides;
+} else {
+currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+}
+updateSliderPosition();
+}
+}, { passive: true });
+});
+
+// ====== Back to Top Button ======
+var backToTopBtn = document.querySelector('.back-to-top');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 400) {
+backToTopBtn.classList.add('visible');
+} else {
+backToTopBtn.classList.remove('visible');
+}
+}, { passive: true });
+
+backToTopBtn.addEventListener('click', function() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+});
+</script>
+
+</body>
+</html>
+
